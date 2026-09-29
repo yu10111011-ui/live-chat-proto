@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>ゆるライブ — ゆい</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <section id="title-screen" class="screen active">
+      <div class="title-bg" id="title-bg"></div>
+      <div class="title-content">
+        <p class="title-sub">薄いライブチャット・プロト</p>
+        <h1 class="title-main">ゆるライブ</h1>
+        <p class="title-char">話し相手：ゆい</p>
+        <button id="btn-start" class="btn-primary" type="button">配信を見る</button>
+        <p class="title-hint">タップで進みます · AIチャットではありません</p>
+      </div>
+    </section>
+
+    <section id="game-screen" class="screen">
+      <div id="stage" class="stage">
+        <img id="portrait" class="portrait" alt="ゆい" />
+        <div class="live-badge"><span class="dot"></span> LIVE · 1.2K</div>
+        <div id="dialogue-box" class="dialogue-box">
+          <div id="name-plate" class="name-plate">ゆい</div>
+          <p id="dialogue-text" class="dialogue-text"></p>
+          <span id="continue-hint" class="continue-hint">▼</span>
+        </div>
+        <div id="choices" class="choices hidden" role="group" aria-label="選択肢"></div>
+      </div>
+    </section>
+
+    <section id="ending-screen" class="screen">
+      <div class="ending-content">
+        <p id="ending-label" class="ending-label"></p>
+        <h2 id="ending-title" class="ending-title"></h2>
+        <p id="ending-message" class="ending-message"></p>
+        <button id="btn-retry" class="btn-primary" type="button">もう一度</button>
+      </div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
